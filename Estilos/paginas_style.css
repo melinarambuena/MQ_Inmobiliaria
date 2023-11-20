@@ -1,0 +1,1222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+
+    /* overflow-y: hidden; */
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
+}
+
+/* fondo */
+body {
+    background-color: rgb(108, 114, 164);
+    background-image: url("../media/png_desktop.png");
+    background-position: center;
+
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+/* header */
+nav a {
+    font-weight: 100;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: rgb(114, 200, 48);
+}
+
+nav ul li a {
+    font-weight: bold;
+    list-style: none;
+}
+
+nav ul {
+    list-style: none;
+    display: inline;
+}
+
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: rgb(108, 114, 164);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: rgb(245, 245, 245);
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+}
+
+.logo {
+
+    display: flex;
+    align-items: center;
+    color: rgb(114, 200, 48);
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+main {
+    min-height: calc(100vh - 90px);
+    padding: 4rem 0;
+
+}
+
+
+
+/*pagina index*/
+
+
+.encierro_h1 {
+    font-size: 4em;
+    color: rgb(248, 248, 248);
+    -webkit-text-fill-color: rgb(108, 114, 164);
+    -webkit-text-stroke-width: 2px;
+    margin-left: 150px;
+    margin-top: 50px;
+
+}
+
+.encierro_h2 {
+
+    font-size: 2.7em;
+    color: rgb(248, 248, 248);
+    -webkit-text-fill-color: rgb(114, 200, 48);
+    -webkit-text-stroke-width: 2px;
+    margin-left: 430px;
+
+
+}
+
+.titulo {
+    background-image: url("../media/foto_figma_cortada.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top 0 right 220px;
+
+}
+
+.foto_casa_ilustrativa {
+    position: relative;
+    z-index: 3;
+    margin-top: -300px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 300px;
+    padding: 25px;
+    width: fit-content;
+
+}
+
+.card:hover .gradient {
+    opacity: 1;
+}
+
+.gradient {
+
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: 20px;
+    align-items: center;
+}
+
+/* servicios */
+
+.element ul {
+    font-size: 1.5em;
+    color: rgb(108, 114, 164);
+    list-style: none;
+    line-height: 1.6;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    -webkit-text-fill-color: rgb(248, 248, 248);
+    -webkit-text-stroke-width: 1px;
+    display: block;
+    /* position: absolute;
+    left: 230px;
+    top: 275px; */
+}
+
+
+
+/* pagina contacto */
+/* contenedor de contenedores */
+.pruebaerror {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "grupo" "tarjeta-de-contacto";
+    gap: 3rem;
+    padding: 150px 30px 20px 30px;
+}
+
+
+/* seccion contacto derecha */
+
+.tarjeta-de-contacto {
+
+    background-color: rgba(23, 20, 20, 0.1);
+    height: 170px;
+    text-align: justify;
+    flex-direction: column;
+    text-indent: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* margin-top: 150px; */
+    width: 100%;
+    align-items: center;
+    color: rgb(245, 245, 245);
+
+
+}
+
+
+.texto-contacto {
+    margin: 30px 0px 25px 0px;
+}
+
+/* p{
+    margin: 30px 0px 30px 0px;
+} */
+
+.socialIcons-derecha {
+    background-color: rgb(204, 204, 204);
+    justify-content: space-between;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+
+
+}
+
+/* foto titulos y texto izquierda*/
+.grupo {
+
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    text-align: justify;
+    text-justify: inter-word;
+    color: rgb(245, 245, 245);
+
+    border-inline-start: 3px solid;
+    border-block-start: 3px solid;
+    border-start-start-radius: 80px 80px;
+    padding: 20px;
+    border-image-source: linear-gradient(90deg, rgb(108, 114, 164), rgb(114, 200, 48));
+    border-image-slice: 1;
+
+    /* border: 1px solid blue; */
+}
+
+.nombre {
+    padding: 15px;
+}
+
+.profesion {
+    padding: 8px;
+}
+
+.grupo img {
+    height: 300px;
+    border-radius: 50%;
+
+
+}
+
+/* pagina sobreNosotros */
+
+.padre-sobreNosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 18vh 1fr 1fr;
+    gap: rem;
+    grid-template-areas:
+        "titulo-historia titulo-historia"
+        "texto-informativo imagen-oficina"
+        "texto-informativo imagen-oficina";
+
+}
+
+.titulo-historia {
+    grid-area: titulo-historia;
+    margin: 100px;
+    text-align: center;
+    font-size: 3em;
+    color: rgb(245, 245, 245);
+}
+
+.texto-informativo {
+    grid-area: texto-informativo;
+    text-align: justify;
+    color: rgb(245, 245, 245);
+    margin: 100px 60px;
+    text-indent: 10px;
+    width: 90%;
+    border-inline-start: 3px solid;
+    border-block-start: 3px solid;
+    border-start-start-radius: 80px 80px;
+    padding: 20px;
+    border-image-source: linear-gradient(45deg, rgb(108, 114, 164), rgb(114, 200, 48));
+    border-image-slice: 1;
+}
+
+.imagen-oficina {
+    grid-area: imagen-oficina;
+}
+
+.imagen-oficina img {
+    margin: 100px 60px;
+    width: 80%;
+}
+
+
+
+/* pagina venta */
+.carouselPadre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "fotocasa1 fotocasa2 fotocasa3"
+        "fotocasa4 fotocasa5 fotocasa6"
+        "fotocasa7 . .";
+    gap: 10px;
+}
+
+/* carousel 1 */
+.carousel,
+.carousel2,
+.carousel3,
+.carousel4,
+.carousel5,
+.carousel6,
+.carousel7 {
+    position: relative;
+    margin-left: 100px;
+    margin-top: 130px;
+    background-color: rgba(23, 20, 20, 0.1);
+    height: 330px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+.carousel {
+    grid-area: fotocasa1;
+
+}
+
+/*carousel 2*/
+
+.carousel2 {
+
+    grid-area: fotocasa2;
+
+}
+
+
+/*carousel 3*/
+
+.carousel3 {
+
+    grid-area: fotocasa3;
+
+}
+
+
+/* carousel 4 */
+.carousel4 {
+    grid-area: fotocasa4;
+
+}
+
+/* carousel 5 */
+.carousel5 {
+
+    grid-area: fotocasa5;
+
+
+}
+
+/* carousel 6 */
+.carousel6 {
+
+    grid-area: fotocasa6;
+
+}
+
+/* carousel 7 */
+.carousel7 {
+
+    grid-area: fotocasa7;
+
+}
+
+.carousel_image,
+.carousel_image2,
+.carousel_image3,
+.carousel_image4,
+.carousel_image5,
+.carousel_image6,
+.carousel_image7 {
+    height: 170px;
+    width: 250px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.carousel_track-container,
+.carousel_track-container2,
+.carousel_track-container3,
+.carousel_track-container4,
+.carousel_track-container5,
+.carousel_track-container6,
+.carousel_track-container7 {
+
+    height: 170px;
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* display: flex;
+
+    justify-content: center; */
+}
+
+.carousel_track,
+.carousel_track2,
+.carousel_track3,
+.carousel_track4,
+.carousel_track5,
+.carousel_track6,
+.carousel_track7 {
+
+
+    list-style: none;
+    position: relative;
+    height: 170px;
+    transition: transform 250ms ease-in;
+
+}
+
+.carousel_slide,
+.carousel_slide2,
+.carousel_slide3,
+.carousel_slide4,
+.carousel_slide5,
+.carousel_slide6,
+.carousel_slide7 {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.carousel_button,
+.carousel_button2,
+.carousel_button3,
+.carousel_button4,
+.carousel_button5,
+.carousel_button6,
+.carousel_button7 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+}
+
+.carousel_button--left,
+.carousel_button--left2,
+.carousel_button--left3,
+.carousel_button--left4,
+.carousel_button--left5,
+.carousel_button--left6,
+.carousel_button--left7 {
+    left: -40px;
+}
+
+.carousel_button--right,
+.carousel_button--right2,
+.carousel_button--right3,
+.carousel_button--right4,
+.carousel_button--right5,
+.carousel_button--right6,
+.carousel_button--right7 {
+    right: -40px;
+}
+
+.carousel_button img,
+.carousel_button2 img,
+.carousel_button3 img,
+.carousel_button4 img,
+.carousel_button5 img,
+.carousel_button6 img,
+.carousel_button7 img {
+    width: 12px;
+}
+
+.carousel_nav,
+.carousel_nav2,
+.carousel_nav3,
+.carousel_nav4,
+.carousel_nav5,
+.carousel_nav6,
+.carousel_nav7 {
+    /* background: pink; */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel_indicator,
+.carousel_indicator2,
+.carousel_indicator3,
+.carousel_indicator4,
+.carousel_indicator5,
+.carousel_indicator6,
+.carousel_indicator7 {
+    border: 0;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, .3);
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.carousel_indicator,
+.carousel-slide,
+.carousel_indicator2,
+.carousel-slide2,
+.carousel_indicator3,
+.carousel-slide3,
+.carousel_indicator4,
+.carousel-slide4,
+.carousel_indicator5,
+.carousel-slide5,
+.carousel_indicator6,
+.carousel-slide6,
+.carousel_indicator7,
+.carousel-slide7 {
+    background: rgba(5, 5, 5, 0.696);
+}
+
+.boton-info,
+.boton-info2,
+.boton-info3,
+.boton-info4,
+.boton-info5,
+.boton-info6,
+.boton-info7 {
+    margin: 30px 80px 0px 80px;
+    text-align: center;
+    background-color: #555555;
+    color: rgb(245, 245, 245);
+    font-size: 1em;
+    border-radius: 12px;
+    padding: 5px 10px;
+
+}
+
+.boton-link-info,
+.boton-link-info2,
+.boton-link-info3,
+.boton-link-info4,
+.boton-link-info5,
+.boton-link-info6,
+.boton-link-info7 {
+    color: rgb(245, 245, 245);
+
+}
+
+
+.boton-info:hover,
+.boton-info:hover2,
+.boton-info:hover3,
+.boton-info:hover4,
+.boton-info:hover5,
+.boton-info:hover6,
+.boton-info:hover7 {
+    background-color: rgb(142, 142, 142);
+    transition: 0.5s;
+}
+
+.infocasa,
+.infocasa2,
+.infocasa3,
+.infocasa4,
+.infocasa5,
+.infocasa6,
+.infocasa7 {
+    color: rgb(245, 245, 245);
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+
+/* casa1 , casa2 , casa3 , casa4 , casa5 , casa6 , casa7*/
+
+.orden1,
+.orden2,
+.orden3,
+.orden4,
+.orden5,
+.orden6,
+.orden7 {
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+}
+
+
+
+
+.carouselcasa1,
+.carouselcasa2,
+.carouselcasa3,
+.carouselcasa4,
+.carouselcasa5,
+.carouselcasa6,
+.carouselcasa7 {
+    position: relative;
+    margin-left: 60px;
+    grid-area: casa1;
+    margin-top: 90px;
+    background-color: rgba(23, 20, 20, 0.1);
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.carousel_imagecasa1,
+.carousel_imagecasa2,
+.carousel_imagecasa3,
+.carousel_imagecasa4,
+.carousel_imagecasa5,
+.carousel_imagecasa6,
+.carousel_imagecasa7 {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+.carousel_track-containercasa1,
+.carousel_track-containercasa2,
+.carousel_track-containercasa3,
+.carousel_track-containercasa4,
+.carousel_track-containercasa5,
+.carousel_track-containercasa6,
+.carousel_track-containercasa7 {
+    height: 400px;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.carousel_trackcasa1,
+.carousel_trackcasa2,
+.carousel_trackcasa3,
+.carousel_trackcasa4,
+.carousel_trackcasa5,
+.carousel_trackcasa6,
+.carousel_trackcasa7 {
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+
+}
+
+.carousel_slidecasa1,
+.carousel_slidecasa2,
+.carousel_slidecasa3,
+.carousel_slidecasa4,
+.carousel_slidecasa5,
+.carousel_slidecasa6,
+.carousel_slidecasa7 {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.carousel_buttoncasa1,
+.carousel_buttoncasa2,
+.carousel_buttoncasa3,
+.carousel_buttoncasa4,
+.carousel_buttoncasa5,
+.carousel_buttoncasa6,
+.carousel_buttoncasa7 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel_button--leftcasa1,
+.carousel_button--leftcasa2,
+.carousel_button--leftcasa3,
+.carousel_button--leftcasa4,
+.carousel_button--leftcasa5,
+.carousel_button--leftcasa6,
+.carousel_button--leftcasa7 {
+    left: -40px;
+}
+
+.carousel_button--rightcasa1,
+.carousel_button--rightcasa2,
+.carousel_button--rightcasa3,
+.carousel_button--rightcasa4,
+.carousel_button--rightcasa5,
+.carousel_button--rightcasa6,
+.carousel_button--rightcasa7 {
+    right: -40px;
+}
+
+.carousel_buttoncasa1 img,
+.carousel_buttoncasa2 img,
+.carousel_buttoncasa3 img,
+.carousel_buttoncasa4 img,
+.carousel_buttoncasa5 img,
+.carousel_buttoncasa6 img,
+.carousel_buttoncasa7 img {
+    width: 12px;
+}
+
+.carousel_navcasa1,
+.carousel_navcasa2,
+.carousel_navcasa3,
+.carousel_navcasa4,
+.carousel_navcasa5,
+.carousel_navcasa6,
+.carousel_navcasa7 {
+    /* background: pink; */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel_indicatorcasa1,
+.carousel_indicatorcasa2,
+.carousel_indicatorcasa3,
+.carousel_indicatorcasa4,
+.carousel_indicatorcasa5,
+.carousel_indicatorcasa6,
+.carousel_indicatorcasa7 {
+    border: 0;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, .3);
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.carousel_indicatorcasa1,
+.carousel-slidecasa1,
+.carousel_indicatorcasa2,
+.carousel-slidecasa2,
+.carousel_indicatorcasa3,
+.carousel-slidecasa3,
+.carousel_indicatorcasa4,
+.carousel-slidecasa4,
+.carousel_indicatorcasa5,
+.carousel-slidecasa5,
+.carousel_indicatorcasa6,
+.carousel-slidecasa6,
+.carousel_indicatorcasa7,
+.carousel-slidecasa7 {
+    background: rgba(5, 5, 5, 0.696);
+}
+
+.tarjetacasa1,
+.tarjetacasa2,
+.tarjetacasa3,
+.tarjetacasa4,
+.tarjetacasa5,
+.tarjetacasa6,
+.tarjetacasa7 {
+    background-color: rgba(23, 20, 20, 0.1);
+    border-radius: 10px;
+    color: #f5f5f5;
+    margin-top: 90px;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+
+}
+
+.tarjetacasa1 ul,
+.tarjetacasa2 ul,
+.tarjetacasa3 ul,
+.tarjetacasa5 ul,
+.tarjetacasa6 ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.tarjetacasa4 ul {
+    margin-top: 90px;
+    margin-bottom: 110px;
+
+}
+
+.tarjetacasa6 ul {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.tarjetacasa7 ul {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.tarjetacasa1 ul li,
+.tarjetacasa2 ul li,
+.tarjetacasa3 ul li,
+.tarjetacasa4 ul li,
+.tarjetacasa5 ul li,
+.tarjetacasa6 ul li,
+.tarjetacasa7 ul li {
+    margin-top: 8px;
+
+}
+
+.icons_tarjetacasa1,
+.iconoMQCasa1 {
+    background-color: rgb(204, 204, 204);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.icons_tarjetacasa1 a {
+    padding: 10px;
+}
+
+.iconoMQCasa1 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 22%;
+
+}
+
+
+.logoCasa1 img {
+    height: 50px;
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(167, 167, 167);
+    background-position: center;
+    position: relative;
+    width: 100%;
+
+
+
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 5px 5px 5px;
+
+
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgb(248, 248, 248);
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    text-decoration: none;
+    color: rgb(145, 145, 145);
+    border-radius: 50%;
+}
+
+.socialIcons a:hover {
+    background-color: rgb(142, 142, 142);
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: hsl(240, 248, 255);
+    transition: 0.5s;
+}
+
+.footerBottom {
+    background-color: rgb(142, 142, 142);
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+
+
+
+}
+
+.footerBottom p {
+    color: rgb(245, 245, 245);
+    font-size: 0.9em;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width:1115px) {
+    .carouselPadre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "fotocasa1 fotocasa2" 
+        "fotocasa3 fotocasa4" 
+        "fotocasa5 fotocasa6"
+        "fotocasa7 . ";
+    }
+}
+
+
+
+
+@media (max-width:1063px) {
+    .tarjeta-de-contacto {
+        height: 188px;
+        text-indent: initial;
+    }
+}
+
+@media (max-width:1043px) {
+    .tarjeta-de-contacto a {
+
+        padding: 10px;
+    }
+}
+
+@media (max-width:1035px) {
+    .encierro_h1 {
+        font-size: 3em;
+    }
+
+    .encierro_h2 {
+        margin-left: 228px;
+    }
+
+    .card {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width:1018px) {
+    .tarjeta-de-contacto {
+        height: 210px;
+
+    }
+}
+
+@media (max-width: 818px) {
+    .titulo {
+        background-image: none;
+    }
+
+    .encierro_h1 {
+        font-size: 2.6em;
+        margin-left: 90px;
+    }
+
+    .encierro_h2 {
+        margin-left: 90px;
+    }
+
+    .card {
+        margin-left: 90px;
+        width: 600px;
+    }
+
+    .card ul li {
+        font-size: 0.8em;
+    }
+
+    .carouselPadre {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "fotocasa1" 
+        "fotocasa2" 
+        "fotocasa3"
+        "fotocasa4" 
+        "fotocasa5" 
+        "fotocasa6"
+        "fotocasa7";
+    }
+}
+
+
+@media (max-width:768px) {
+    .pruebaerror {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "grupo" "tarjeta-de-contacto";
+        gap: 1rem;
+        padding: 150px 30px 20px 30px;
+    }
+
+    .padre-sobreNosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "texto-informativo"
+            "texto-informativo"
+            "imagen-oficina";
+    }
+
+    .padre-sobreNosotros {
+        grid-template-columns: 1fr;
+        grid-template-areas: "titulo-historia" "texto-informativo" "imagen-oficina";
+        gap: 1rem;
+    }
+
+    .texto-informativo {
+        height: 300px;
+    }
+
+    .imagen-oficina {
+        margin-top: -350px;
+    }
+
+    .texto-informativo{
+        width: 80%;
+    }
+}
+
+@media (max-width:751px) {
+    .imagen-oficina {
+        margin-top: -330px;
+    }
+}
+
+@media (max-width:743px) {
+    .texto-informativo{
+        margin-top: 40px;
+        height: 350px;
+    }
+    
+    .padre-sobreNosotros{
+        gap: 100px;
+    }
+
+}
+
+@media (max-width:717px) {
+    .imagen-oficina {
+        margin-top: -300px;
+    }
+}
+
+
+@media (max-width:706px) {
+    .card {
+        margin-left: 30px;
+    }
+
+    .encierro_h1 {
+
+        margin-left: 30px;
+    }
+
+    .encierro_h2 {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width:672px) {
+    
+    .texto-informativo{
+        height: 370px;
+    }
+}
+
+@media (max-width:646px) {
+    .card {
+        width: 500px;
+    }
+}
+
+@media (max-width:641px) {
+    .padre-sobreNosotros{
+        gap: 200px;
+    }
+
+    .texto-informativo{
+        margin-top: -90px;
+    }
+}
+
+@media (max-width:615px) {
+    .encierro_h1 {
+        margin-left: 30px;
+        font-size: 2em;
+    }
+
+    .encierro_h2 {
+        font-size: 1.8em;
+        margin-left: 30px;
+    }
+
+
+}
+
+@media (max-width:643px) {
+    .tarjeta-de-contacto {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:546px) {
+
+
+    .card {
+        width: 400px;
+    }
+}
+
+
+@media (max-width:526px) {
+    .tarjeta-de-contacto {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width:481px) {
+
+    .encierro_h1 {
+        font-size: 1.7em;
+    }
+
+    .encierro_h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width:463px) {
+    .tarjeta-de-contacto {
+        margin-top: 160px;
+    }
+}
+
+@media (max-width:446px) {
+
+    .encierro_h1 {
+        font-size: 1.5em;
+    }
+
+    .encierro_h2 {
+        font-size: 1.2em;
+    }
+
+    .card {
+        width: 350px;
+    }
+}
+
+@media (max-width:396px) {
+
+    .card {
+        width: 300px;
+    }
+}
+
+
+
+@media (max-width:391px) {
+
+    .encierro_h1 {
+        font-size: 1.2em;
+    }
+
+    .card {
+        width: 300px;
+    }
+}
+
+
+/*.foto_casa_ilustrativa {
+    display: none; /* Opcional: oculta la imagen si ya no la necesitas visible }*/
