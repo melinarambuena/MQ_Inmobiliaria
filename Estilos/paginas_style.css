@@ -959,10 +959,14 @@ footer {
     .tarjetacasa5,
     .tarjetacasa6,
     .tarjetacasa7 {
-        margin-left: -150px;
+        margin-left: 50px;
+        width: 30%;
 
     }
 
+    .orden1, .orden2, .orden3, .orden4, .orden5, .orden6, .orden7 {
+        gap: 20px;
+    }
 }
 
 
@@ -1015,9 +1019,10 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        align-items: center;
     }
 
-    .tarjetacasa1,
+   /* .tarjetacasa1,
     .tarjetacasa2,
     .tarjetacasa3,
     .tarjetacasa4,
@@ -1026,7 +1031,7 @@ footer {
     .tarjetacasa7 {
         margin-left: 267px;
 
-    }
+    }*/
 }
 
 @media (max-width:893px){
@@ -1130,7 +1135,7 @@ footer {
 
 }
 
-@media (max-width:717px) {
+@media(max-width:717px) {
     .imagen-oficina {
         margin-top: -300px;
     }
@@ -1174,11 +1179,10 @@ footer {
     .tarjetacasa1,
     .tarjetacasa2,
     .tarjetacasa3,
-    .tarjetacasa5,
+    .tarjetacasa5
      {
         margin-left: 40px;
-        width: 25%;
-
+        width: 300px;
     }
 
     .tarjetacasa4, 
@@ -1187,8 +1191,7 @@ footer {
     {
         margin-left: 40px;
 
-        width: 34%;
-    }
+        width: 300px;    }
 
 }
 
@@ -1266,14 +1269,22 @@ footer {
     .tarjetacasa6,
     .tarjetacasa7 {
         margin-left: 40px;
-        width: 35%;
+        width: 300px;
 
     }
 
     
 }
 
+/*
+@media (max-width:584px) {
 
+.tarjetacasa6{
+    width: 50%;
+}
+    
+}
+*/
 
 @media (max-width:546px) {
 
