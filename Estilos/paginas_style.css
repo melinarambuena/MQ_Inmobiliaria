@@ -604,6 +604,24 @@ main {
 
 /* casa1 , casa2 , casa3 , casa4 , casa5 , casa6 , casa7*/
 
+
+.direccion1,
+.direccion2,
+.direccion3,
+.direccion4,
+.direccion5,
+.direccion6,
+.direccion7 {
+    color: rgb(245, 245, 245);
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.direccion-container {
+    display: flex;
+    justify-content: center;
+}
+
 .orden1,
 .orden2,
 .orden3,
@@ -964,7 +982,13 @@ footer {
 
     }
 
-    .orden1, .orden2, .orden3, .orden4, .orden5, .orden6, .orden7 {
+    .orden1,
+    .orden2,
+    .orden3,
+    .orden4,
+    .orden5,
+    .orden6,
+    .orden7 {
         gap: 20px;
     }
 }
@@ -1022,7 +1046,7 @@ footer {
         align-items: center;
     }
 
-   /* .tarjetacasa1,
+    /* .tarjetacasa1,
     .tarjetacasa2,
     .tarjetacasa3,
     .tarjetacasa4,
@@ -1034,8 +1058,8 @@ footer {
     }*/
 }
 
-@media (max-width:893px){
-    .tarjetacasa4{
+@media (max-width:893px) {
+    .tarjetacasa4 {
         width: 29%;
     }
 }
@@ -1159,39 +1183,50 @@ footer {
     .carouselcasa5,
     .carouselcasa6,
     .carouselcasa7 {
-       
+
         height: 200px;
         width: 300px;
         margin-left: 40px;
     }
-    
-    .carousel_slidecasa1, .carousel_slidecasa2, .carousel_slidecasa3, .carousel_slidecasa4, .carousel_slidecasa5, .carousel_slidecasa6, .carousel_slidecasa7 {
+
+    .carousel_slidecasa1,
+    .carousel_slidecasa2,
+    .carousel_slidecasa3,
+    .carousel_slidecasa4,
+    .carousel_slidecasa5,
+    .carousel_slidecasa6,
+    .carousel_slidecasa7 {
         height: 200px;
-        width:300px
+        width: 300px
     }
 
-    .carousel_track-containercasa1, .carousel_track-containercasa2, .carousel_track-containercasa3, .carousel_track-containercasa4, .carousel_track-containercasa5, .carousel_track-containercasa6, .carousel_track-containercasa7 {
+    .carousel_track-containercasa1,
+    .carousel_track-containercasa2,
+    .carousel_track-containercasa3,
+    .carousel_track-containercasa4,
+    .carousel_track-containercasa5,
+    .carousel_track-containercasa6,
+    .carousel_track-containercasa7 {
         height: 200px;
         width: 300px;
-        
+
     }
 
     .tarjetacasa1,
     .tarjetacasa2,
     .tarjetacasa3,
-    .tarjetacasa5
-     {
+    .tarjetacasa5 {
         margin-left: 40px;
         width: 300px;
     }
 
-    .tarjetacasa4, 
+    .tarjetacasa4,
     .tarjetacasa6,
-    .tarjetacasa7
-    {
+    .tarjetacasa7 {
         margin-left: 40px;
 
-        width: 300px;    }
+        width: 300px;
+    }
 
 }
 
@@ -1223,11 +1258,13 @@ footer {
         width: 500px;
     }
 }
+
 @media (max-width:643px) {
     .tarjeta-de-contacto {
         margin-top: 50px;
     }
 }
+
 @media (max-width:641px) {
     .padre-sobreNosotros {
         gap: 200px;
@@ -1261,7 +1298,8 @@ footer {
 
 }
 
-@media (max-width:602px){
+@media (max-width:602px) {
+
     .tarjetacasa1,
     .tarjetacasa2,
     .tarjetacasa3,
@@ -1273,7 +1311,7 @@ footer {
 
     }
 
-    
+
 }
 
 /*
