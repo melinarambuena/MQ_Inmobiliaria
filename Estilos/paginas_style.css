@@ -946,11 +946,23 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas:
-        "fotocasa1 fotocasa2" 
-        "fotocasa3 fotocasa4" 
-        "fotocasa5 fotocasa6"
-        "fotocasa7 . ";
+            "fotocasa1 fotocasa2"
+            "fotocasa3 fotocasa4"
+            "fotocasa5 fotocasa6"
+            "fotocasa7 . ";
     }
+
+    .tarjetacasa1,
+    .tarjetacasa2,
+    .tarjetacasa3,
+    .tarjetacasa4,
+    .tarjetacasa5,
+    .tarjetacasa6,
+    .tarjetacasa7 {
+        margin-left: -150px;
+
+    }
+
 }
 
 
@@ -991,6 +1003,39 @@ footer {
     }
 }
 
+@media (max-width:966px) {
+
+    .orden1,
+    .orden2,
+    .orden3,
+    .orden4,
+    .orden5,
+    .orden6,
+    .orden7 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tarjetacasa1,
+    .tarjetacasa2,
+    .tarjetacasa3,
+    .tarjetacasa4,
+    .tarjetacasa5,
+    .tarjetacasa6,
+    .tarjetacasa7 {
+        margin-left: 267px;
+
+    }
+}
+
+@media (max-width:893px){
+    .tarjetacasa4{
+        width: 29%;
+    }
+}
+
+
 @media (max-width: 818px) {
     .titulo {
         background-image: none;
@@ -1019,13 +1064,13 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
-        "fotocasa1" 
-        "fotocasa2" 
-        "fotocasa3"
-        "fotocasa4" 
-        "fotocasa5" 
-        "fotocasa6"
-        "fotocasa7";
+            "fotocasa1"
+            "fotocasa2"
+            "fotocasa3"
+            "fotocasa4"
+            "fotocasa5"
+            "fotocasa6"
+            "fotocasa7";
     }
 }
 
@@ -1062,7 +1107,7 @@ footer {
         margin-top: -350px;
     }
 
-    .texto-informativo{
+    .texto-informativo {
         width: 80%;
     }
 }
@@ -1074,12 +1119,12 @@ footer {
 }
 
 @media (max-width:743px) {
-    .texto-informativo{
+    .texto-informativo {
         margin-top: 40px;
         height: 350px;
     }
-    
-    .padre-sobreNosotros{
+
+    .padre-sobreNosotros {
         gap: 100px;
     }
 
@@ -1089,6 +1134,62 @@ footer {
     .imagen-oficina {
         margin-top: -300px;
     }
+
+    .carousel_imagecasa1,
+    .carousel_imagecasa2,
+    .carousel_imagecasa3,
+    .carousel_imagecasa4,
+    .carousel_imagecasa5,
+    .carousel_imagecasa6,
+    .carousel_imagecasa7 {
+        height: 200px;
+        width: 300px;
+
+    }
+
+    .carouselcasa1,
+    .carouselcasa2,
+    .carouselcasa3,
+    .carouselcasa4,
+    .carouselcasa5,
+    .carouselcasa6,
+    .carouselcasa7 {
+       
+        height: 200px;
+        width: 300px;
+        margin-left: 40px;
+    }
+    
+    .carousel_slidecasa1, .carousel_slidecasa2, .carousel_slidecasa3, .carousel_slidecasa4, .carousel_slidecasa5, .carousel_slidecasa6, .carousel_slidecasa7 {
+        height: 200px;
+        width:300px
+    }
+
+    .carousel_track-containercasa1, .carousel_track-containercasa2, .carousel_track-containercasa3, .carousel_track-containercasa4, .carousel_track-containercasa5, .carousel_track-containercasa6, .carousel_track-containercasa7 {
+        height: 200px;
+        width: 300px;
+        
+    }
+
+    .tarjetacasa1,
+    .tarjetacasa2,
+    .tarjetacasa3,
+    .tarjetacasa5,
+     {
+        margin-left: 40px;
+        width: 25%;
+
+    }
+
+    .tarjetacasa4, 
+    .tarjetacasa6,
+    .tarjetacasa7
+    {
+        margin-left: 40px;
+
+        width: 34%;
+    }
+
 }
 
 
@@ -1108,8 +1209,8 @@ footer {
 }
 
 @media (max-width:672px) {
-    
-    .texto-informativo{
+
+    .texto-informativo {
         height: 370px;
     }
 }
@@ -1119,20 +1220,24 @@ footer {
         width: 500px;
     }
 }
-
+@media (max-width:643px) {
+    .tarjeta-de-contacto {
+        margin-top: 50px;
+    }
+}
 @media (max-width:641px) {
-    .padre-sobreNosotros{
+    .padre-sobreNosotros {
         gap: 200px;
     }
 
-    .texto-informativo{
+    .texto-informativo {
         margin-top: -90px;
         margin-left: 40px;
         height: 500px;
 
     }
 
-    .imagen-oficina{
+    .imagen-oficina {
         margin-left: -20px;
     }
 
@@ -1153,11 +1258,22 @@ footer {
 
 }
 
-@media (max-width:643px) {
-    .tarjeta-de-contacto {
-        margin-top: 50px;
+@media (max-width:602px){
+    .tarjetacasa1,
+    .tarjetacasa2,
+    .tarjetacasa3,
+    .tarjetacasa5,
+    .tarjetacasa6,
+    .tarjetacasa7 {
+        margin-left: 40px;
+        width: 35%;
+
     }
+
+    
 }
+
+
 
 @media (max-width:546px) {
 
